@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sagar Gupta | ML &amp; AI Portfolio</title>
+  <meta name="description" content="Sagar Gupta — B.Tech CSE (AI &amp; ML) student from Bhilai, India. Building intelligent systems with Python, Machine Learning, and AI. Open to internships." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sagar Gupta | ML &amp; AI Portfolio" />
+  <meta property="og:description" content="Turning data and ideas into intelligent systems. B.Tech AI &amp; ML student open to internships." />
+  <meta property="og:url" content="https://sagargupta.dev" />
+  <meta property="og:image" content="/og-image.png" />
+
+  <!-- Favicon inline SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230A0A0A'/><text x='16' y='22' font-size='18' text-anchor='middle' fill='%23C6FF3D' font-family='monospace' font-weight='bold'>SG</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- JSON-LD Person Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sagar Gupta",
+    "jobTitle": "B.Tech CSE (AI & ML) Student",
+    "description": "Turning data and ideas into intelligent systems.",
+    "url": "https://sagargupta.dev",
+    "email": "nkg45321@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bhilai",
+      "addressRegion": "Chhattisgarh",
+      "addressCountry": "IN"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/sagar-gupta-ab898a369"
+    ],
+    "knowsAbout": ["Machine Learning", "Artificial Intelligence", "Python", "SQL", "Java"]
+  }
+  </script>
+
+  <script type="module" crossorigin src="/assets/index-CkUu6wcJ.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CHm4CIN3.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       PRELOADER
+  ═══════════════════════════════════════════ -->
+  <div id="preloader" aria-hidden="true">
+    <div class="pre-counter" id="preCounter">0</div>
+    <div class="pre-name" id="preName">
+      <span class="pre-letter" aria-label="S">S</span>
+      <span class="pre-letter" aria-label="A">A</span>
+      <span class="pre-letter" aria-label="G">G</span>
+      <span class="pre-letter" aria-label="A">A</span>
+      <span class="pre-letter" aria-label="R">R</span>
+      <span class="pre-space"> </span>
+      <span class="pre-letter" aria-label="G">G</span>
+      <span class="pre-letter" aria-label="U">U</span>
+      <span class="pre-letter" aria-label="P">P</span>
+      <span class="pre-letter" aria-label="T">T</span>
+      <span class="pre-letter" aria-label="A">A</span>
+    </div>
+    <div class="pre-bar"><div class="pre-bar-fill" id="preBarFill"></div></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       CUSTOM CURSOR
+  ═══════════════════════════════════════════ -->
+  <div id="cursor" aria-hidden="true">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+    <div class="cursor-label"></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════ -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a href="#hero" class="nav-logo" aria-label="Sagar Gupta — home">
+        <span class="logo-mark">SG</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#work" class="nav-link">Work</a></li>
+        <li><a href="#journey" class="nav-link">Journey</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <!-- TODO: Replace href with actual resume PDF URL -->
+        <a href="#" class="btn-resume magnetic" data-magnetic aria-label="Download Resume PDF">
+          <span>Resume</span>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M7 1v8M3 9l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile overlay menu -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Mobile navigation" hidden>
+    <button class="mobile-close" id="mobileClose" aria-label="Close menu">✕</button>
+    <nav aria-label="Mobile navigation">
+      <ul role="list">
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#skills" class="mobile-link">Skills</a></li>
+        <li><a href="#work" class="mobile-link">Work</a></li>
+        <li><a href="#journey" class="mobile-link">Journey</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- TODO: Replace href with actual resume PDF URL -->
+    <a href="#" class="mobile-resume">Download Resume ↓</a>
+  </div>
+
+  <main id="main">
+
+    <!-- ═══════════════════════════════════════════
+         1. HERO
+    ═══════════════════════════════════════════ -->
+    <section id="hero" class="section-hero" aria-label="Hero">
+      <canvas id="heroCanvas" aria-hidden="true"></canvas>
+
+      <div class="hero-content">
+        <p class="hero-eyebrow mono">
+          <span class="eyebrow-dot"></span>
+          Available for internships
+        </p>
+        <h1 class="hero-name" aria-label="Sagar Gupta">
+          <span class="hero-name-line" aria-hidden="true">
+            <span class="split-char">S</span><span class="split-char">A</span><span class="split-char">G</span><span class="split-char">A</span><span class="split-char">R</span>
+          </span>
+          <span class="hero-name-line" aria-hidden="true">
+            <span class="split-char">G</span><span class="split-char">U</span><span class="split-char">P</span><span class="split-char">T</span><span class="split-char">A</span>
+          </span>
+        </h1>
+
+        <div class="hero-role-row">
+          <span class="hero-role-static">—</span>
+          <div class="hero-role-rotator" id="roleRotator" aria-live="polite" aria-label="Role">
+            <span class="role-item active">ML Enthusiast</span>
+            <span class="role-item">AI Builder</span>
+            <span class="role-item">Python Developer</span>
+          </div>
+        </div>
+
+        <p class="hero-tagline">Turning data and ideas into intelligent systems.</p>
+
+        <div class="hero-ctas">
+          <a href="#work" class="btn-primary magnetic" data-magnetic>
+            <span>View Work</span>
+          </a>
+          <a href="#contact" class="btn-ghost">
+            <span>Get in Touch</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <div class="scroll-line"></div>
+        <span class="mono">scroll</span>
+      </div>
+
+      <!-- Film grain overlay -->
+      <div class="grain" aria-hidden="true"></div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         2. ABOUT
+    ═══════════════════════════════════════════ -->
+    <section id="about" class="section-about" aria-labelledby="about-heading">
+      <div class="about-grid">
+        <div class="about-media">
+          <!-- TODO: Replace with actual photo <img src="photo.jpg" alt="Sagar Gupta"> -->
+          <div class="about-photo-placeholder" aria-label="Photo placeholder — TODO: add photo">
+            <div class="placeholder-inner">
+              <svg class="placeholder-svg" viewBox="0 0 200 200" aria-hidden="true">
+                <defs>
+                  <pattern id="nodePattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+                    <circle cx="20" cy="20" r="1.5" fill="#C6FF3D" opacity="0.6"/>
+                    <line x1="20" y1="20" x2="40" y2="40" stroke="#C6FF3D" stroke-width="0.3" opacity="0.2"/>
+                    <line x1="20" y1="20" x2="0" y2="40" stroke="#C6FF3D" stroke-width="0.3" opacity="0.2"/>
+                  </pattern>
+                </defs>
+                <rect width="200" height="200" fill="url(#nodePattern)"/>
+                <circle cx="100" cy="80" r="35" fill="#1A1A1A" stroke="#C6FF3D" stroke-width="1" opacity="0.8"/>
+                <text x="100" y="86" text-anchor="middle" fill="#C6FF3D" font-size="24" font-family="monospace">SG</text>
+                <text x="100" y="170" text-anchor="middle" fill="#555" font-size="10" font-family="monospace">TODO: add photo</text>
+              </svg>
+            </div>
+          </div>
+          <div class="about-badge">
+            <span class="mono">B.Tech AI &amp; ML</span>
+          </div>
+        </div>
+
+        <div class="about-text-col">
+          <h2 id="about-heading" class="section-label mono">// about</h2>
+          <p class="about-bio reveal-words" id="aboutBio">
+            Motivated B.Tech student with a strong interest in Python, Machine Learning, and Artificial Intelligence. I build academic projects that solve real-world problems with technology. I'm looking for opportunities to apply my skills, gain practical experience, and grow as an ML/AI professional.
+          </p>
+
+          <div class="about-info-row">
+            <div class="info-chip">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path d="M7 1C4.24 1 2 3.24 2 6c0 3.75 5 8 5 8s5-4.25 5-8c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 7 4a1.5 1.5 0 0 1 0 3z" fill="currentColor" opacity=".7"/>
+              </svg>
+              <span>Bhilai, Chhattisgarh, India</span>
+            </div>
+            <div class="info-chip">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path d="M1 3h12v9H1V3zm0 0l6 5 6-5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" fill="none" opacity=".7"/>
+              </svg>
+              <span>Open to Internships</span>
+            </div>
+            <div class="info-chip">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <rect x="1" y="2" width="12" height="11" rx="1.5" stroke="currentColor" stroke-width="1.2" fill="none" opacity=".7"/>
+                <path d="M4 1v2M10 1v2M1 6h12" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" opacity=".7"/>
+              </svg>
+              <span>Sept 2024 → Present</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         3. SKILLS
+    ═══════════════════════════════════════════ -->
+    <section id="skills" class="section-skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading" class="section-label mono">// skills</h2>
+
+      <!-- Marquee strip 1 — left to right -->
+      <div class="marquee-track" aria-hidden="true">
+        <div class="marquee-inner marquee-fwd" id="marquee1">
+          <span>Python</span><span>Machine Learning</span><span>Artificial Intelligence</span><span>SQL</span><span>DBMS</span><span>Java</span><span>Data Science</span><span>Neural Networks</span><span>Python</span><span>Machine Learning</span><span>Artificial Intelligence</span><span>SQL</span><span>DBMS</span><span>Java</span><span>Data Science</span><span>Neural Networks</span>
+        </div>
+      </div>
+
+      <!-- Marquee strip 2 — right to left -->
+      <div class="marquee-track" aria-hidden="true">
+        <div class="marquee-inner marquee-rev" id="marquee2">
+          <span>Automation</span><span>Electronics</span><span>Real-Time Systems</span><span>Algorithms</span><span>OOP</span><span>Problem Solving</span><span>Linux</span><span>Git</span><span>Automation</span><span>Electronics</span><span>Real-Time Systems</span><span>Algorithms</span><span>OOP</span><span>Problem Solving</span><span>Linux</span><span>Git</span>
+        </div>
+      </div>
+
+      <!-- Skill map -->
+      <div class="skills-map" aria-label="Skill proficiency map">
+        <article class="skill-card" data-level="skillful">
+          <div class="skill-rings">
+            <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>
+          </div>
+          <h3 class="skill-name">Python</h3>
+          <span class="skill-level mono">Skillful</span>
+        </article>
+        <article class="skill-card" data-level="skillful">
+          <div class="skill-rings">
+            <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>
+          </div>
+          <h3 class="skill-name">Machine Learning</h3>
+          <span class="skill-level mono">Skillful</span>
+        </article>
+        <article class="skill-card" data-level="experienced">
+          <div class="skill-rings">
+            <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>
+          </div>
+          <h3 class="skill-name">Artificial Intelligence</h3>
+          <span class="skill-level mono">Experienced</span>
+        </article>
+        <article class="skill-card" data-level="beginner">
+          <div class="skill-rings">
+            <div class="ring r1"></div><div class="ring r2"></div>
+          </div>
+          <h3 class="skill-name">SQL / DBMS</h3>
+          <span class="skill-level mono">Beginner</span>
+        </article>
+        <article class="skill-card" data-level="beginner">
+          <div class="skill-rings">
+            <div class="ring r1"></div><div class="ring r2"></div>
+          </div>
+          <h3 class="skill-name">Java</h3>
+          <span class="skill-level mono">Beginner</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         4. SELECTED WORK
+    ═══════════════════════════════════════════ -->
+    <section id="work" class="section-work" aria-labelledby="work-heading">
+      <div class="work-header">
+        <h2 id="work-heading" class="section-label mono">// selected work</h2>
+        <p class="work-count mono">(02)</p>
+      </div>
+
+      <div class="work-stack" id="workStack">
+
+        <!-- Project 1: Laser Home Security System -->
+        <article class="work-card" id="workCard1" data-index="01">
+          <div class="work-card-inner">
+            <div class="work-visual" aria-hidden="true">
+              <!-- Circuit/laser line SVG for security project -->
+              <svg viewBox="0 0 600 400" class="work-svg" aria-label="Abstract circuit visualization">
+                <defs>
+                  <filter id="glow1">
+                    <feGaussianBlur stdDeviation="3" result="blur"/>
+                    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                  </filter>
+                </defs>
+                <!-- Background grid -->
+                <g stroke="#1e1e1e" stroke-width="0.5" opacity="0.8">
+                  <line x1="0" y1="80" x2="600" y2="80"/>
+                  <line x1="0" y1="160" x2="600" y2="160"/>
+                  <line x1="0" y1="240" x2="600" y2="240"/>
+                  <line x1="0" y1="320" x2="600" y2="320"/>
+                  <line x1="100" y1="0" x2="100" y2="400"/>
+                  <line x1="200" y1="0" x2="200" y2="400"/>
+                  <line x1="300" y1="0" x2="300" y2="400"/>
+                  <line x1="400" y1="0" x2="400" y2="400"/>
+                  <line x1="500" y1="0" x2="500" y2="400"/>
+                </g>
+                <!-- Laser beams -->
+                <g filter="url(#glow1)">
+                  <line class="laser-beam" x1="50" y1="200" x2="550" y2="200" stroke="#C6FF3D" stroke-width="1.5" opacity="0.9"/>
+                  <line class="laser-beam" x1="50" y1="120" x2="550" y2="120" stroke="#C6FF3D" stroke-width="1" opacity="0.6"/>
+                  <line class="laser-beam" x1="50" y1="280" x2="550" y2="280" stroke="#C6FF3D" stroke-width="1" opacity="0.6"/>
+                  <!-- Vertical connectors -->
+                  <line x1="150" y1="80" x2="150" y2="320" stroke="#C6FF3D" stroke-width="0.5" opacity="0.3"/>
+                  <line x1="300" y1="60" x2="300" y2="340" stroke="#C6FF3D" stroke-width="0.5" opacity="0.3"/>
+                  <line x1="450" y1="80" x2="450" y2="320" stroke="#C6FF3D" stroke-width="0.5" opacity="0.3"/>
+                </g>
+                <!-- Sensor nodes -->
+                <g fill="#C6FF3D">
+                  <circle cx="50" cy="200" r="5"/><circle cx="550" cy="200" r="5"/>
+                  <circle cx="50" cy="120" r="3"/><circle cx="550" cy="120" r="3"/>
+                  <circle cx="50" cy="280" r="3"/><circle cx="550" cy="280" r="3"/>
+                  <circle cx="150" cy="200" r="6" opacity="0.4"/>
+                  <circle cx="300" cy="200" r="8" opacity="0.2"/>
+                  <circle cx="450" cy="200" r="6" opacity="0.4"/>
+                </g>
+                <!-- Alert symbol -->
+                <g transform="translate(280, 165)" stroke="#C6FF3D" stroke-width="1.5" fill="none">
+                  <polygon points="20,-15 40,15 0,15" opacity="0.7"/>
+                  <line x1="20" y1="-5" x2="20" y2="5" stroke-width="2"/>
+                  <circle cx="20" cy="10" r="1.5" fill="#C6FF3D"/>
+                </g>
+              </svg>
+            </div>
+
+            <div class="work-info">
+              <span class="work-num mono">01</span>
+              <h3 class="work-title">Laser Home Security System</h3>
+              <p class="work-desc">A laser-based security system that detects unauthorized movement in a protected area using sensor-based detection and alert mechanisms for improved home security.</p>
+              <ul class="work-bullets">
+                <li>Sensor-based motion detection with real-time alerts</li>
+                <li>Electronics &amp; automation integration</li>
+                <li>Real-time monitoring architecture</li>
+              </ul>
+              <div class="work-tags">
+                <span class="tag mono">Electronics</span>
+                <span class="tag mono">Automation</span>
+                <span class="tag mono">IoT</span>
+                <span class="tag mono">Real-Time</span>
+              </div>
+              <!-- TODO: Replace href with actual project link -->
+              <a href="#" class="work-cta magnetic" data-magnetic data-cursor-label="VIEW" aria-label="View Laser Home Security System project">
+                <span>View Project</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M3 13L13 3M13 3H5M13 3v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: AI PERSONALIZED LEARNIG APP-->
+        <article class="work-card" id="workCard2" data-index="02">
+          <div class="work-card-inner">
+            <div class="work-visual" aria-hidden="true">
+              <!-- Adaptive node graph SVG for learning app -->
+              <svg viewBox="0 0 600 400" class="work-svg" aria-label="Abstract AI node network visualization">
+                <defs>
+                  <filter id="glow2">
+                    <feGaussianBlur stdDeviation="4" result="blur"/>
+                    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                  </filter>
+                  <radialGradient id="nodeGrad" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#C6FF3D" stop-opacity="0.8"/>
+                    <stop offset="100%" stop-color="#C6FF3D" stop-opacity="0"/>
+                  </radialGradient>
+                </defs>
+                <!-- Neural connections -->
+                <g stroke="#C6FF3D" stroke-width="0.8" opacity="0.3" fill="none">
+                  <line x1="100" y1="200" x2="230" y2="130"/><line x1="100" y1="200" x2="230" y2="200"/><line x1="100" y1="200" x2="230" y2="270"/>
+                  <line x1="230" y1="130" x2="370" y2="100"/><line x1="230" y1="130" x2="370" y2="170"/><line x1="230" y1="200" x2="370" y2="170"/><line x1="230" y1="200" x2="370" y2="230"/><line x1="230" y1="270" x2="370" y2="230"/><line x1="230" y1="270" x2="370" y2="300"/>
+                  <line x1="370" y1="100" x2="500" y2="150"/><line x1="370" y1="170" x2="500" y2="150"/><line x1="370" y1="170" x2="500" y2="250"/><line x1="370" y1="230" x2="500" y2="250"/><line x1="370" y1="300" x2="500" y2="250"/>
+                </g>
+                <!-- Nodes -->
+                <g filter="url(#glow2)">
+                  <circle cx="100" cy="200" r="14" fill="url(#nodeGrad)"/>
+                  <circle cx="100" cy="200" r="6" fill="#C6FF3D"/>
+                  <circle cx="230" cy="130" r="10" fill="url(#nodeGrad)"/>
+                  <circle cx="230" cy="130" r="4" fill="#C6FF3D" opacity="0.9"/>
+                  <circle cx="230" cy="200" r="12" fill="url(#nodeGrad)"/>
+                  <circle cx="230" cy="200" r="5" fill="#C6FF3D" opacity="0.9"/>
+                  <circle cx="230" cy="270" r="10" fill="url(#nodeGrad)"/>
+                  <circle cx="230" cy="270" r="4" fill="#C6FF3D" opacity="0.9"/>
+                  <circle cx="370" cy="100" r="8" fill="#C6FF3D" opacity="0.7"/>
+                  <circle cx="370" cy="170" r="11" fill="#C6FF3D" opacity="0.6"/>
+                  <circle cx="370" cy="230" r="9" fill="#C6FF3D" opacity="0.6"/>
+                  <circle cx="370" cy="300" r="7" fill="#C6FF3D" opacity="0.5"/>
+                  <circle cx="500" cy="150" r="13" fill="url(#nodeGrad)"/>
+                  <circle cx="500" cy="150" r="5" fill="#C6FF3D"/>
+                  <circle cx="500" cy="250" r="15" fill="url(#nodeGrad)"/>
+                  <circle cx="500" cy="250" r="6" fill="#C6FF3D"/>
+                </g>
+                <!-- Labels -->
+                <g fill="#C6FF3D" font-family="monospace" font-size="9" opacity="0.6">
+                  <text x="60" y="196">INPUT</text>
+                  <text x="210" y="105">L1</text>
+                  <text x="355" y="90">L2</text>
+                  <text x="487" y="135">OUTPUT</text>
+                </g>
+              </svg>
+            </div>
+
+            <div class="work-info">
+              <span class="work-num mono">02</span>
+              <h3 class="work-title">AI Personalized Learning App</h3>
+              <p class="work-desc">An AI-based learning application that delivers personalized experiences by analyzing student performance and learning preferences to recommend relevant study content.</p>
+              <ul class="work-bullets">
+                <li>Student performance analysis engine</li>
+                <li>Preference-driven content recommendation</li>
+                <li>Adaptive learning path generation</li>
+              </ul>
+              <div class="work-tags">
+                <span class="tag mono">Artificial Intelligence</span>
+                <span class="tag mono">Machine Learning</span>
+                <span class="tag mono">Python</span>
+              </div>
+              <!-- TODO: Replace href with actual project link -->
+              <a href="#" class="work-cta magnetic" data-magnetic data-cursor-label="VIEW" aria-label="View AI Personalized Learning App project">
+                <span>View Project</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M3 13L13 3M13 3H5M13 3v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         5. JOURNEY (Timeline)
+    ═══════════════════════════════════════════ -->
+    <section id="journey" class="section-journey" aria-labelledby="journey-heading">
+      <h2 id="journey-heading" class="section-label mono">// journey</h2>
+      <p class="journey-subtitle">Education &amp; Certifications</p>
+
+      <div class="timeline" role="list">
+        <svg class="timeline-svg" id="timelineSvg" aria-hidden="true">
+          <line id="timelineLine" x1="50%" y1="0" x2="50%" y2="0" stroke="#C6FF3D" stroke-width="1.5" stroke-dasharray="4 4"/>
+        </svg>
+
+        <!-- Education -->
+        <div class="timeline-item" role="listitem">
+          <div class="timeline-dot timeline-dot--edu"></div>
+          <div class="timeline-content">
+            <span class="timeline-date mono">Sept 2024 → Present</span>
+            <h3 class="timeline-title">B.Tech in Computer Science &amp; Engineering (AI &amp; ML)</h3>
+            <p class="timeline-org">Shri Shankaracharya Professional University, Bhilai</p>
+            <span class="timeline-tag mono">Education</span>
+          </div>
+        </div>
+
+        <!-- Internshala — highlighted -->
+        <div class="timeline-item timeline-item--highlight" role="listitem">
+          <div class="timeline-dot timeline-dot--cert"></div>
+          <div class="timeline-content">
+            <span class="timeline-date mono">July 2026</span>
+            <h3 class="timeline-title">Internship &amp; Job Preparation Training</h3>
+            <p class="timeline-org">Internshala</p>
+            <div class="timeline-badge-row">
+              <span class="timeline-badge accent-badge">🏆 Top Performer · 90%</span>
+            </div>
+            <span class="timeline-tag mono">Certification</span>
+          </div>
+        </div>
+
+        <!-- TCS iON -->
+        <div class="timeline-item" role="listitem">
+          <div class="timeline-dot timeline-dot--cert"></div>
+          <div class="timeline-content">
+            <span class="timeline-date mono">December 2025</span>
+            <h3 class="timeline-title">TCS iON Career Edge: Young Professional</h3>
+            <p class="timeline-org">Tata Consultancy Services</p>
+            <span class="timeline-tag mono">Certification</span>
+          </div>
+        </div>
+
+        <!-- Cybersecurity -->
+        <div class="timeline-item" role="listitem">
+          <div class="timeline-dot timeline-dot--cert"></div>
+          <div class="timeline-content">
+            <span class="timeline-date mono">June 2025</span>
+            <h3 class="timeline-title">Cybersecurity Assessment</h3>
+            <p class="timeline-org">LearnTube.ai</p>
+            <span class="timeline-tag mono">Certification</span>
+          </div>
+        </div>
+
+        <!-- Data Science Bootcamp -->
+        <div class="timeline-item" role="listitem">
+          <div class="timeline-dot timeline-dot--cert"></div>
+          <div class="timeline-content">
+            <span class="timeline-date mono">March 2025</span>
+            <h3 class="timeline-title">Data Science and AI Bootcamp</h3>
+            <p class="timeline-org">BitsQ Software Testing Training Institute</p>
+            <span class="timeline-tag mono">Certification</span>
+          </div>
+        </div>
+
+        <!-- Digital Productivity -->
+        <div class="timeline-item" role="listitem">
+          <div class="timeline-dot timeline-dot--cert"></div>
+          <div class="timeline-content">
+            <span class="timeline-date mono">December 2024</span>
+            <h3 class="timeline-title">Digital Productivity</h3>
+            <p class="timeline-org">NIIT Foundation</p>
+            <span class="timeline-tag mono">Certification</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         6. BEYOND CODE
+    ═══════════════════════════════════════════ -->
+    <section id="beyond" class="section-beyond" aria-labelledby="beyond-heading">
+      <h2 id="beyond-heading" class="section-label mono">// beyond code</h2>
+      <p class="beyond-subtitle">A few things that fuel the work</p>
+
+      <div class="beyond-grid">
+        <div class="tilt-tile" data-tilt>
+          <div class="tile-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="10" stroke="#C6FF3D" stroke-width="1.5"/><circle cx="24" cy="24" r="4" fill="#C6FF3D"/><line x1="24" y1="4" x2="24" y2="12" stroke="#C6FF3D" stroke-width="1.5"/><line x1="24" y1="36" x2="24" y2="44" stroke="#C6FF3D" stroke-width="1.5"/><line x1="4" y1="24" x2="12" y2="24" stroke="#C6FF3D" stroke-width="1.5"/><line x1="36" y1="24" x2="44" y2="24" stroke="#C6FF3D" stroke-width="1.5"/></svg>
+          </div>
+          <h3>AI Exploration</h3>
+          <p>Keeping up with new models, papers, and breakthroughs in AI.</p>
+        </div>
+        <div class="tilt-tile" data-tilt>
+          <div class="tile-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="18" stroke="#C6FF3D" stroke-width="1.5"/><path d="M15 28a10 10 0 0 0 18 0" stroke="#C6FF3D" stroke-width="1.5" fill="none"/><line x1="20" y1="18" x2="20" y2="22" stroke="#C6FF3D" stroke-width="2" stroke-linecap="round"/><line x1="28" y1="18" x2="28" y2="22" stroke="#C6FF3D" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Sports</h3>
+          <p>Playing and following sports — great reset from hours of debugging.</p>
+        </div>
+        <div class="tilt-tile" data-tilt>
+          <div class="tile-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="26" rx="2" stroke="#C6FF3D" stroke-width="1.5"/><line x1="20" y1="36" x2="16" y2="42" stroke="#C6FF3D" stroke-width="1.5"/><line x1="28" y1="36" x2="32" y2="42" stroke="#C6FF3D" stroke-width="1.5"/><line x1="14" y1="42" x2="34" y2="42" stroke="#C6FF3D" stroke-width="1.5"/><path d="M22 20l3 6 3-6" stroke="#C6FF3D" stroke-width="1.2" fill="none"/></svg>
+          </div>
+          <h3>Anime &amp; Movies</h3>
+          <p>Storytelling through a screen — always hunting for great narratives.</p>
+        </div>
+        <div class="tilt-tile" data-tilt>
+          <div class="tile-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M8 40V20l16-12 16 12v20" stroke="#C6FF3D" stroke-width="1.5" fill="none"/><rect x="18" y="28" width="12" height="12" stroke="#C6FF3D" stroke-width="1.2"/><circle cx="24" cy="16" r="3" fill="#C6FF3D"/></svg>
+          </div>
+          <h3>Building Ideas</h3>
+          <p>Turning random "what-ifs" into actual projects, one repo at a time.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         7. CONTACT
+    ═══════════════════════════════════════════ -->
+    <section id="contact" class="section-contact" aria-labelledby="contact-heading">
+      <div class="contact-inner">
+        <h2 id="contact-heading" class="contact-headline">
+          <span class="contact-line">Let's build</span>
+          <span class="contact-line contact-line--accent">something.</span>
+        </h2>
+
+        <p class="contact-desc">Open to internships, collaborations, and interesting conversations about AI &amp; ML.</p>
+
+        <div class="contact-actions">
+          <button class="btn-copy-email magnetic" id="copyEmailBtn" data-magnetic aria-label="Copy email address nkg45321@gmail.com">
+            <span class="email-text">nkg45321@gmail.com</span>
+            <span class="copy-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="4" y="4" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.4"/><path d="M3 12H2.5A1.5 1.5 0 0 1 1 10.5V3.5A1.5 1.5 0 0 1 2.5 2h7A1.5 1.5 0 0 1 11 3.5V4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+            </span>
+          </button>
+        </div>
+
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/sagar-gupta-ab898a369" target="_blank" rel="noopener noreferrer" class="contact-social sweep-link">
+            LinkedIn
+          </a>
+          <!-- TODO: Replace href with actual GitHub profile URL -->
+          <a href="https://github.com/SAGAR-7777" class="contact-social sweep-link" target="_blank" aria-label="GitHub">
+
+            GitHub
+          </a>
+          <a href="mailto:nkg45321@gmail.com" class="contact-social sweep-link">
+            Email
+          </a>
+        </div>
+
+        <!-- Optional mailto contact form -->
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="contactName">Name</label>
+            <input type="text" id="contactName" name="name" placeholder="Your name" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="contactEmail">Email</label>
+            <input type="email" id="contactEmail" name="email" placeholder="your@email.com" required autocomplete="email" />
+          </div>
+          <div class="form-group form-group--full">
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" name="message" rows="4" placeholder="Tell me about the opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary magnetic" data-magnetic>
+            <span>Send Message</span>
+          </button>
+        </form>
+
+      </div>
+
+      <!-- Toast notification -->
+      <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="footer-time mono">
+          Local time in Bhilai, India: <span id="localTime"></span>
+        </span>
+      </div>
+      <div class="footer-center">
+        <span class="mono">Designed &amp; built by Sagar Gupta</span>
+      </div>
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top" aria-label="Back to top">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M10 16V4M4 10l6-6 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          Back to top
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP via CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- Lenis smooth scroll via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
+</body>
+</html>
